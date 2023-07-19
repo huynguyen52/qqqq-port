@@ -439,6 +439,8 @@ $(function () {
     $(".active").removeClass("active");
     $(".loader").removeClass("loaded");
     $("#main").addClass("active");
+    header.removeClass('inner-is-visible');
+    footer.removeClass('inner-is-visible');
     header.addClass("menu-is-visible");
     footer.addClass("menu-is-visible");
     setTimeout(function () {
@@ -452,6 +454,10 @@ $(function () {
     setTimeout(function () {
       header.removeClass("menu-is-visible");
       footer.removeClass("menu-is-visible");
+      if ($('.inner').hasClass('active')) {
+        header.addClass('inner-is-visible');
+        footer.addClass('inner-is-visible');
+      }
     }, 1500);
   });
 
@@ -462,6 +468,8 @@ $(function () {
     $(".active").removeClass("active");
     $(".loader").removeClass("loaded");
     $("#about").addClass("active");
+    header.removeClass('inner-is-visible');
+    footer.removeClass('inner-is-visible');
     header.addClass("menu-is-visible");
     footer.addClass("menu-is-visible");
     setTimeout(function () {
@@ -475,6 +483,10 @@ $(function () {
     setTimeout(function () {
       header.removeClass("menu-is-visible");
       footer.removeClass("menu-is-visible");
+      if ($('.inner').hasClass('active')) {
+        header.addClass('inner-is-visible');
+        footer.addClass('inner-is-visible');
+      }
     }, 1500);
   });
 
@@ -485,6 +497,8 @@ $(function () {
     $(".active").removeClass("active");
     $(".loader").removeClass("loaded");
     $("#works").addClass("active");
+    header.removeClass('inner-is-visible');
+    footer.removeClass('inner-is-visible');
     header.addClass("menu-is-visible");
     footer.addClass("menu-is-visible");
     setTimeout(function () {
@@ -498,6 +512,10 @@ $(function () {
     setTimeout(function () {
       header.removeClass("menu-is-visible");
       footer.removeClass("menu-is-visible");
+      if ($('.inner').hasClass('active')) {
+        header.addClass('inner-is-visible');
+        footer.addClass('inner-is-visible');
+      }
     }, 1500);
   });
 
@@ -508,6 +526,8 @@ $(function () {
     $(".active").removeClass("active");
     $(".loader").removeClass("loaded");
     $("#contact").addClass("active");
+    header.removeClass('inner-is-visible');
+    footer.removeClass('inner-is-visible');
     header.addClass("menu-is-visible");
     footer.addClass("menu-is-visible");
     setTimeout(function () {
@@ -521,6 +541,10 @@ $(function () {
     setTimeout(function () {
       header.removeClass("menu-is-visible");
       footer.removeClass("menu-is-visible");
+      if ($('.inner').hasClass('active')) {
+        header.addClass('inner-is-visible');
+        footer.addClass('inner-is-visible');
+      }
     }, 1500);
   });
 });
