@@ -576,4 +576,8 @@ cards.forEach((card, index) => {
 /* ------------------------------------------------*/
 /* Neon mouse hover End */
 /* ------------------------------------------------*/
+
+const logo = document.getElementsByTagName('spline-viewer')[0]._logo;
+logo.remove();
+console.log(logo);
 });
