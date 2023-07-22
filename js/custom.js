@@ -547,4 +547,33 @@ $(function () {
       }
     }, 1500);
   });
+
+/* ------------------------------------------------*/
+/* Neon mouse hover Start */
+/* ------------------------------------------------*/
+const cards = document.querySelectorAll(".shine-box");
+const neonEffects = document.querySelectorAll(".neon-effect");
+
+cards.forEach((card, index) => {
+  const neonEffect = neonEffects[index];
+
+  card.addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX - card.offsetLeft;
+    const mouseY = e.clientY - card.offsetTop;
+
+    neonEffect.style.left = `${mouseX - 100}px`;
+    neonEffect.style.top = `${mouseY - 100}px`;
+  });
+
+  card.addEventListener("mouseenter", () => {
+    neonEffect.style.opacity = 1;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    neonEffect.style.opacity = 0;
+  });
+});
+/* ------------------------------------------------*/
+/* Neon mouse hover End */
+/* ------------------------------------------------*/
 });

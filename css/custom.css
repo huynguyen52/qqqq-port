@@ -1,4 +1,29 @@
 /* ------------------------------------------------*/
+/* Neon mouse hover Start */
+/* ------------------------------------------------*/
+.shine-box {
+  position: relative;
+  cursor: url(./../img/cursor-click.svg), auto;
+}
+.shine-box .neon-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(147, 154, 255, 0.30) 0%, rgba(147, 154, 255, 0.00) 100%, rgba(6,78,167,1) 42%, rgba(0,212,255,1) 100%);
+  pointer-events: none;
+  opacity: 0;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
+
+/* ------------------------------------------------*/
+/* Neon mouse hover End */
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
 /* Desktop Navigation Start */
 /* ------------------------------------------------*/
 .menu-button {
