@@ -2883,8 +2883,15 @@ form input.margin-l, form textarea.margin-l {
 .show-skillbar {
   display: block;
   padding: 0;
-  margin-bottom: 2rem;
+  background: linear-gradient(to right, #939AFF 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease;
 }
+.show-skillbar:hover {
+  background-position: left bottom;
+}
+
 .show-skillbar:last-of-type {
   margin-bottom: 0;
 }
@@ -2900,7 +2907,7 @@ form input.margin-l, form textarea.margin-l {
 .skillbar {
   position: relative;
   width: 100%;
-  height: 3.6rem;
+  height: 5.6rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media only screen and (min-width: 1400px) {
@@ -2915,6 +2922,8 @@ form input.margin-l, form textarea.margin-l {
   left: 0;
   font: normal 500 2rem/1.6 "Poppins", sans-serif;
   color: #ffffff;
+  font-size: 32px;
+  line-height: 1.7;
 }
 
 .skillbar-bar {
@@ -2930,13 +2939,14 @@ form input.margin-l, form textarea.margin-l {
 .skill-bar-percent {
   display: block;
   position: absolute;
-  top: 0;
+  bottom: 8px;
   right: 2px;
   font: normal 500 2rem/1.6 "Poppins", sans-serif;
   -webkit-font-feature-settings: "lnum";
      -moz-font-feature-settings: "lnum";
           font-feature-settings: "lnum";
   color: #ffffff;
+  font-size: 16px;
 }
 
 /* ------------------------------------------------*/
